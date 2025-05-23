@@ -1,0 +1,25 @@
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: microservice-compras
+  datasource:
+    url: jdbc:mysql://hopper.proxy.rlwy.net:37467/railway    #url: jdbc:mysql://localhost:3306/comprasDB
+    username: root
+    password: zybRjxOTNhYawVGHQgPrfwuFwJRtxDSq
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

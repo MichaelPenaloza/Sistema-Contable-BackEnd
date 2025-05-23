@@ -1,0 +1,32 @@
+eureka:
+  client:
+    registerWithEureka: false
+
+server:
+  port: 8080
+
+spring:
+
+  application:
+    name: microservice-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: microservice-productos
+          uri: lb://microservice-productos
+          predicates:
+            - Path=/api/producto/**
+            
+        - id: compras-factura
+          uri: lb://microservice-compras
+          predicates:
+            - Path=/api/factura-compra/**
+
+        - id: compras-detalle
+          uri: lb://microservice-compras
+          predicates:
+            - Path=/api/detalle-factura-compra/**
+        

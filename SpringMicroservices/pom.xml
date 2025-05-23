@@ -23,7 +23,8 @@
     <module>microservice-config</module>
     <module>microservice-ventas</module>
     <module>microservice-productos</module>
-    <module>microservice-contabilidad</module>  
+    <module>microservice-contabilidad</module>
+    <module>microservice-compras</module>  
   </modules>
 
 
