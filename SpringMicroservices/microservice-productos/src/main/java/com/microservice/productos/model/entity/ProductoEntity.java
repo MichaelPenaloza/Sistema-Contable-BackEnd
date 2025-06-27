@@ -18,8 +18,8 @@ public class ProductoEntity {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "clase")
-    private String clase;
+    @Column(name = "tipo")
+    private String tipo;
 
     @Column(name = "codigo")
     private String codigo;

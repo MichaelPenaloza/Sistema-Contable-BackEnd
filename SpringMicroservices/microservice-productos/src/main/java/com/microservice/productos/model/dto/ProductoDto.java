@@ -15,8 +15,12 @@ public class ProductoDto {
     private String codigoBarras;
     private String nombre;
     private String descripcion;
-    private Double precio;
+    private Double precio_uno;
+    private Double precio_dos;
+    private Double precio_tres;
     private String marca;
     private Integer stock;
     private String impuesto;
+    private String estado;
+    
 }
