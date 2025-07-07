@@ -6,9 +6,9 @@ spring:
   application:
     name: microservice-compras
   datasource:
-    url: jdbc:mysql://hopper.proxy.rlwy.net:37467/railway    #url: jdbc:mysql://localhost:3306/comprasDB
+    url: jdbc:mysql://gondola.proxy.rlwy.net:35039/railway   #url: jdbc:mysql://localhost:3306/comprasDB
     username: root
-    password: zybRjxOTNhYawVGHQgPrfwuFwJRtxDSq
+    password: YIWocFQOHxhVERMYWbylUOATqqidfgge
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

@@ -1,14 +1,14 @@
+
 server:
-  port: 9090
+  port: 8081
 
 spring:
   application:
-    name: microservice-productos
+    name: microservice-contabilidad
   datasource:
-    url: jdbc:mysql://yamanote.proxy.rlwy.net:54713/railway
-    #url: jdbc:mysql://localhost:3306/productosDb
+    url: jdbc:mysql://metro.proxy.rlwy.net:14242/railway
     username: root
-    password: gUtOXApWhyDWiuuqZPLEHeEVMLRqetIY
+    password: urGfGzSNwqtBiUurfuhtPNDlEvCgeMUS
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
